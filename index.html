@@ -19,17 +19,34 @@
           <h4 class="logo-text">Osteopathic Medicine</h4>
         </a>
       </div>
+      <div class="sub-nav"></div>
       <div class="hamburger">
         <i class="fas fa-bars fa-2x"></i>
         <i class="fas fa-times fa-2x"></i>
       </div>
       <ul class="nav-links">
         <li>
-          <a class="nav-text" href="#top">About</a>
+          <a class="nav-text" href="#top">About Us</a>
         </li>
         <div class="line"></div>
         <li>
-          <a class="nav-text" href="#Books">Books</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Resources
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a class="nav-text" href="#Information">Research</a>
+              <a class="nav-text" href="#Information">Books</a>
+              <a class="nav-text" href="#Information">Articles</a>
+            </div>
+          </div>
+          <span class="mobile-re">
+            <a class="nav-text" href="#Contact">Resources</a>
+            <a class="nav-text" href="#Information">Research</a>
+            <a class="nav-text" href="#Information">Books</a>
+            <a class="nav-text" href="#Information">Articles</a>
+          </span>
         </li>
         <div class="line"></div>
         <li>
@@ -40,21 +57,13 @@
           <a class="nav-text" href="#Products">Products</a>
         </li>
         <div class="line"></div>
-        <li>
-          <a class="nav-text" href="#Blog">Blog</a>
-        </li>
-        <div class="line"></div>
-        <li>
-          <a class="nav-text" href="#Beyond">Beyond</a>
-        </li>
-        <div class="line"></div>
       </ul>
     </nav>
 
     <section>
       <h1 id="About">Page 1</h1>
     </section>
-    <section id="Books">
+    <section id="Information">
       <h1>Page 2</h1>
     </section>
     <section id="Contact">
@@ -69,6 +78,11 @@
     <section id="Beyond">
       <h1>Page 6</h1>
     </section>
+
+    <footer>
+      <p>Made with loaf by Derek Dorr</p>
+    </footer>
+
     <script src="medapp.js"></script>
   </body>
 </html>

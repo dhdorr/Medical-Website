@@ -15,6 +15,62 @@ nav {
   width: 100%;
 }
 
+.sub-nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+  height: 20vh;
+  width: 50%;
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.mobile-re {
+  display: none;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  color: azure;
+  background: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .logo {
   margin-left: 10%;
   font-size: 24px;
@@ -74,7 +130,22 @@ nav {
     overflow-x: hidden;
   }
   nav {
-    position: relative;
+    position: fixed;
+  }
+  .dropdown {
+    display: none;
+  }
+  .mobile-re {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .logo {
     margin-left: 20%;
@@ -161,5 +232,20 @@ section {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  background: cadetblue;
+  color: azure;
 }
 /*# sourceMappingURL=style.css.map */
