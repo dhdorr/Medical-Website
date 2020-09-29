@@ -1,0 +1,165 @@
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: cadetblue;
+  color: azure;
+  height: 10vh;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 10%;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.logo-text {
+  color: azure;
+}
+
+.hamburger {
+  color: #f8f8f8;
+  display: none;
+}
+
+.hamburger:hover {
+  color: teal;
+}
+
+.fa-times {
+  display: none;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 100%;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-text {
+  color: azure;
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  color: teal;
+}
+
+.line {
+  background: darkblue;
+  height: 2px;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    position: relative;
+  }
+  .logo {
+    margin-left: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: cadetblue;
+    height: 90vh;
+    top: 10vh;
+    right: 0px;
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .nav-text {
+    margin-left: 10px;
+  }
+  .line {
+    background: darkblue;
+    height: 2px;
+    width: 100%;
+    z-index: 2;
+    display: block;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .toggle .fa-times {
+    display: block;
+  }
+  .toggle .fa-bars {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: azure;
+  font-family: "Philosopher", sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
